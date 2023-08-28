@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #1F1F1F;
+}
+.ion-arrow-left-c {
+    background-color: black;
+}
+/* font-family: 'Archivo', sans-serif; */
+a {
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+}
+.photo-titre {
+    margin: 10px 0;
+
+}
+/*                                             ************* NAVBAR *********** */
+
+.header {
+    display: flex;
+}
+.navbar-container1, .navbar-container2 {
+    display: flex;
+}
+
+.titre-gauche, .titre-droite1, .titre-droite2, .navbar-container2 p {
+    font-family: 'Archivo', sans-serif;
+}
+.navbar-container1 {
+    margin: 30px 120px;
+}
+.navbar-container1 a{
+    margin: 0px 10px;
+    font-size: 16px;
+    color: #1F1F1F;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+a:first-child {
+    margin-left: -2px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.navbar-container2 {
+    margin: 30px 120px;
+    position: absolute;
+    right: -50px;
+}
+.navbar-container2 a, p{
+    margin: 0px 20px;
+    font-size: 16px;
+    color: #1F1F1F;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.btn-login {
+    border: solid 1px black;
+    padding: 6px 30px;
+    position: relative;
+    top: -6px;
+}
+.myhome {
+    position: absolute;
+    top: 52px;
+    left: 100px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.hr-accueil {
+    margin: 0px 120px;
+    background-color: #1F1F1F;
+    width: 88.8%;
+    max-width: 88.8%;
+}
+.titrepage {
+    margin: 0px 120px;
+    display: flex;
+}
+.titre-gauche { 
+    font-size: 5.375rem;
+    letter-spacing: -2px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    word-spacing: 20px;
+}
+
+.titre-droite1 {
+    font-size: 38px;
+    letter-spacing: -2px;
+    margin-top: 57px;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+    position: absolute;
+    right: 110px;
+}
+.titre-droite2 {
+    font-size: 38px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    position: absolute;
+    right: 190px;
+    top: 183px;
+}
+/*                                        ************* WHY US ? *************** */
+.whyus {
+    margin: 0 120px;
+    margin-top: 130px;
+    margin-bottom: 110px;
+    font-size: 38px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    font-family: 'Archivo', sans-serif;
+}
+.whyusphotos {    
+    display: flex;
+    margin-left: 120px;
+}
+.whyusphotos p {
+    font-size: 32px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    margin-left: -2px;
+    line-height: 30px;
+    font-family: 'Archivo', sans-serif;
+}
+.hr-whyus1 {
+    width: 798px;
+    margin: 15px 0;
+}
+.whyusphotogauche {
+    margin-top: 20px;
+}
+.whyusphotodroite {
+    margin-left: 310px;
+    margin-top: -190px;
+}
+.hr-whyus2 {
+    margin: 15px 0;
+}
+.whyus123 {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 120px 100px;
+    padding-bottom: 20px;
+}
+.num-why {
+    font-size: 38px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    font-weight: 400;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 10px;
+}
+.titre-why {
+    font-size: 32px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Archivo', sans-serif;
+}
+.why2 {
+    margin: 0 88px;
+}
+/*                                           *************** PROPERTIES ************* */
+.whyus2 {
+    font-size: 38px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    padding-top: 70px;
+    margin: 0 120px;
+    margin-bottom: 50px;
+    font-family: 'Archivo', sans-serif;
+}
+.properties {
+    margin: 30px 120px;
+}
+.alpha {
+    width: 100%;
+    display: flex;    
+}
+.texte-villa {
+    width: 50%;
+    margin-left: 300px;
+    border-bottom: solid 1px black;
+}
+.titre-why2 {
+    font-size: 38px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    line-height: 30px;
+    margin-bottom: 60px;
+    font-family: 'Archivo', sans-serif;
+}
+.txt-why2 {
+    margin-top: 13px;
+    margin-bottom: 60px;
+}
+.more {
+    font-size: 30px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    line-height: 30px;
+    font-family: 'Archivo', sans-serif;
+}
+.fa-arrow-right-long {
+    font-size: 24px;
+    transform: rotate(-45deg);
+}
+.beta {
+    width: 100%;
+    display: flex;
+    margin-top: 150px;    
+}
+.texte-villa2 {
+    width: 30%;
+    margin-left: 300px;
+    border-bottom: solid 1px black;
+}
+.photo-villa2 {
+    margin-left: 360px;
+}
+.gamma {
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+}
+.texte-villa3 {
+    width: 30%;
+    margin-left: 300px;
+    border-bottom: solid 1px black;
+}
+.delta {
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+}
+.texte-villa4 {
+    width: 30%;
+    border-bottom: solid 1px black;
+    /* margin-left: -10px; */
+}
+.photo-villa4 {
+    margin-left: 350px;
+}
+.omega {
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+}
+.titre-why2 {
+    margin-left: 0;
+}
+.txt-why {
+    margin-left: 0;
+}
+.txt-why2 {
+    margin-left: 0;
+}
+.more {
+    margin-left: 0;
+}
+/* *                                          ******** FORMUMLAIRE ************************ */
+.formulaire {
+    margin: 0 120px;
+    margin-top: 150px;
+}
+.all i {
+    transform: rotate(0deg);
+}
+.all {
+    margin-left: 970px;
+}
+.formu {
+    display: flex;
+}
+.gauche {
+    width: 50%;
+}
+input[type="text"]{
+    padding: 12px 12px;
+    width: 95%;
+    margin-top: 12px;
+    border: solid 2px #ccc;
+}
+.champ2 input {
+    height: 100px;
+}
+
+input[type="submit"]{
+    padding: 12px 12px;
+    width: 98.5%;
+    margin-top: 12px;
+    color: white;
+    background: black;
+}
+.droite {
+    margin-left: 360px;
+}
+.droite p {
+    margin-top: 225px;
+    margin-left: 200px;
+}
+.champ3 input {
+    width: 100%;
+}
+.more2 {
+    font-size: 30px;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+}
+.footer {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    height: 120px;
+    display: flex;
+    background: black;
+}
+.footer > .navbar-container1 {
+    width: 60%;
+    color: white;
+}
+.footer > .navbar-container2 {
+    position: relative;
+    right: 0;
+    margin-left: 30px;
+    width: 40%;
+    justify-content: end;
+    height: 30px;
+}
+.btn-login2 {
+    border: solid 1px white;
+    padding: 6px 30px;
+    position: relative;
+    bottom: 10%;
+}
+.myhome3 {
+    margin-top: -95px;
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 119px;
+    color: white;
+    margin-bottom: 30px;
+}
+.footer a {
+    color: white;
+}
+.hr-footer {
+    margin: 0 120px;
+    margin-top: -10px;
+}
+.allright {
+    color: white;
+    margin: 0px 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    margin-left: 82.5%;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* PAGE 2 BUY *-*-*-*-*-*-*-*-*-*-*-**-*-*- */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* PAGE 2 BUY *-*-*-*-*-*-*-*-*-*-*-**-*-*- */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* PAGE 2 NOS BIENS *-*-*-*-*-*-*-*-*-*-*-**-*-*- */
+.titre-gauche-buy { 
+    font-size: 4.575rem;
+    letter-spacing: -2px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    word-spacing: 20px;
+    font-weight: 500;
+}
