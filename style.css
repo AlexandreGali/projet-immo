@@ -16,6 +16,9 @@ a {
     margin: 10px 0;
 
 }
+.active-link a{
+    font-weight: bold;
+}
 /*                                             ************* NAVBAR *********** */
 
 .header {
@@ -70,9 +73,12 @@ a:first-child {
 }
 .hr-accueil {
     margin: 0px 120px;
-    background-color: #1F1F1F;
+    background-color: black;
+    color: black;
     width: 88.8%;
     max-width: 88.8%;
+    height: 1px;
+    border: none;
 }
 .titrepage {
     margin: 0px 120px;
@@ -296,6 +302,7 @@ input[type="submit"]{
     margin-top: 12px;
     color: white;
     background: black;
+    cursor: pointer;
 }
 .droite {
     margin-left: 360px;
@@ -306,6 +313,7 @@ input[type="submit"]{
 }
 .champ3 input {
     width: 100%;
+    cursor: pointer;
 }
 .more2 {
     font-size: 30px;
@@ -365,11 +373,347 @@ input[type="submit"]{
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* PAGE 2 BUY *-*-*-*-*-*-*-*-*-*-*-**-*-*- */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* PAGE 2 BUY *-*-*-*-*-*-*-*-*-*-*-**-*-*- */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!   *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* PAGE 2 NOS BIENS *-*-*-*-*-*-*-*-*-*-*-**-*-*- */
+.menu-precedent {
+    margin: 35px 120px;
+}
+.menu-precedent a {
+    font-weight: 500;
+    margin-left: 8px;
+}
 .titre-gauche-buy { 
     font-size: 4.575rem;
     letter-spacing: -2px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px; 
     word-spacing: 20px;
     font-weight: 500;
+}
+/* *                ******** FILTRES  *************** */
+.filter-container {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.filter-btn {
+    margin: 15px 120px;
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    z-index: 2;
+}
+.filter-btn i {
+    margin-left: 5px;
+}
+.hidden {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+.filter-style {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    width: 315px;
+    /* width: 30%; */
+    margin: 10px 120px;
+    /* height: 500px; */
+}
+.filter-style label {
+    font-weight: 500;
+}
+.title-bedrooms, .filter-bedrooms, .title-bathrooms, .filter-bathrooms, .title-type, .filter-type, .title-size, .filter-size, .title-price, .filter-price, .btn-apply {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.filter-bedrooms input{
+    display: none;
+}
+.filter-bedrooms label {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 1.15rem;
+    margin-right: 8px;
+  }
+#un:checked ~ label[for="un"], #deux:checked ~ label[for="deux"], #trois:checked ~ label[for="trois"],#quatre:checked ~ label[for="quatre"], #cinq:checked ~ label[for="cinq"], #six:checked ~ label[for="six"]{
+    background: black;
+    color: white;
+}
+.title-bedrooms {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.filter-bedrooms{
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+#un1:checked ~ label[for="un1"], #deux2:checked ~ label[for="deux2"], #trois3:checked ~ label[for="trois3"],#quatre4:checked ~ label[for="quatre4"], #cinq5:checked ~ label[for="cinq5"], #six6:checked ~ label[for="six6"]{
+    background: black;
+    color: white;
+}
+.filter-bathrooms input {
+    display: none;
+}
+.filter-bathrooms label {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 1.15rem;
+    margin-right: 8px;
+}
+.title-bathrooms {
+    margin-bottom: 3px;
+}
+.title-bathrooms label {
+    border: none;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+.filter-bathrooms {
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.title-type {
+    padding-top: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.filter-type {
+    padding-left: 20px;
+}
+.filter-type-type input {
+    margin-right: 7px;
+}
+.filter-type-type {
+    margin-bottom: 4px;
+}
+.filter-type-type label {
+    cursor: pointer;
+}
+#townhouse, #apartment, #villa {
+    accent-color: black;
+}
+.title-size {
+    padding-left: 20px;
+    margin-top: 14px;
+}
+#propertySizeValue {
+    margin-left: 42%;
+    margin-top: -5px;
+}
+input#propertySize {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 270px;
+}
+#propertySize, #propertyPrice {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 1px;
+    background: #000000;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }  
+  #propertySize::-webkit-slider-thumb, #propertyPrice::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: black;  
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 89.5%;
+    margin-left: 17px;
+}
+.range-label {
+    font-size: 12px;
+    color: #000000;
+}
+.range-hrs {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin-left: 18px;
+    margin-top: -9px;
+}
+.range-hr, .price-hr {
+    height: 8px;
+    width: 1px;
+    background-color: #000000;
+}
+.title-price {
+    padding-left: 20px;
+    margin-top: 4px;
+}
+#propertyPriceValue {
+    margin-left: 43.5%;
+    margin-top: 5px;
+}
+input#propertyPrice {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    width: 270px;
+}
+.price-hrs {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin-left: 18px;
+    margin-top: -19px;
+}
+.btn-apply button {
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-top: 22px;
+}
+/* ********* SORTING ******* */
+/* .sorting-container {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-left: 69%;
+    width: 80px;
+}
+.sorting-btn {
+    margin: 15px 120px;
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    z-index: 2;
+    width: 80px;
+}
+.sorting-btn i {
+    margin-left: 5px;
+}
+
+.hidden2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+.sorting-style {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    margin-right: 120px;
+    width: 300px;
+}
+
+.title-price2, .price-croissant, .title-creation, .date-croiss-dec {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.title-price2 input {
+    display: none;
+}
+.title-price2:first-child {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+#higher:checked ~ label[for="higher"]{
+    background: black;
+    color: white;
+} */
+
+/* *********** PRESENTATION VILLAS ************ */
+.container-villas {
+    margin-top: 50px;
+    margin-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-villa1, .container-villa2, .container-villa3, .container-villa4, .container-villa5, .container-villa6, .container-villa7, .container-villa8, .container-villa9 {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    width: 30.85%;
+    max-width: 33%;
+    padding: 20px 0;
+    margin-right: 20px;
+    margin-bottom: 120px;
+}
+.container-villa1 img, .container-villa2 img, .container-villa3 img, .container-villa4 img, .container-villa5 img, .container-villa6 img, .container-villa7 img, .container-villa8 img, .container-villa9 img {
+    max-width: 100%;
+}
+.titre-villas-buy {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+.titre-villas-buy p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1.5px;
+    margin-right: 5px;
+    word-spacing: 5px;
+}
+.titre-villas-buy i {
+    margin-left: 10px;
+    transform: rotate(0deg);
+}
+.description-villas {
+    margin: 0;
+    padding: 0;
+}
+.description-villas p {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #1F1F1F;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.logos-villas {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.chambre-nb i, .sdb-nb i, .metre-carre i {
+    margin-right: 10px;
+}
+.chambre-nb, .sdb-nb, .metre-carre {
+    font-weight: 500;
+    font-size: 1.3rem;
 }
