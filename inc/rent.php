@@ -6,32 +6,29 @@ $page = isset($_GET['page']) ? $_GET['page'] : '';
 function isPageActive($currentPage, $targetPage) {
     return $currentPage === $targetPage ? 'active' : '';
 }
-function isPageActive2($currentPage, $targetPage) {
-    return $currentPage === $targetPage ? 'active-link' : '';
-}
 ?>
 
 <html>
 <body>
-<!-- ********************  NAVBAR **************** -->
-<div class="header">        
-    <div class="navbar-container1">
-        <div class="navbar">
-            <a href="index.php?page=1" class="lien1 <?php echo isPageActive($page, '1'); ?>">CENTURY 21.</a>
-            <a href="index.php?page=1" class="lien <?php echo isPageActive($page, '1'); ?> <?php echo isPageActive2($page, '1'); ?>">HOMEPAGE</a>
-            <a href="index.php?page=2" class="lien <?php echo isPageActive($page, '2'); ?> <?php echo isPageActive2($page, '2'); ?>">BUY</a>
-            <a href="index.php?page=3" class="lien <?php echo isPageActive($page, '3'); ?> <?php echo isPageActive2($page, '3'); ?>">RENT</a>
-            <a href="index.php?page=4" class="lien <?php echo isPageActive($page, '4'); ?> <?php echo isPageActive2($page, '4'); ?>">SELL</a>
+   <!-- ********************  NAVBAR **************** -->
+    <div class="header">        
+        <div class="navbar-container1">
+            <div class="navbar">
+                <a href="index.php?page=1" class="lien1 <?php echo isPageActive($page, '1'); ?>">CENTURY 21.</a>
+                <a href="index.php?page=1" class="lien <?php echo isPageActive($page, '1'); ?>">HOMEPAGE</a>
+                <a href="index.php?page=2" class="lien <?php echo isPageActive($page, '2'); ?>">BUY</a>
+                <a href="index.php?page=3" class="lien <?php echo isPageActive($page, '3'); ?>">RENT</a>
+                <a href="index.php?page=4" class="lien <?php echo isPageActive($page, '4'); ?>">SELL</a>
+            </div>
         </div>
+        <div class="navbar-container2">
+            <p>CONTACT</p>
+            <a href="" class="btn-login">LOG IN</a>
+            <p>FAVORITE</p>
+        </div>        
     </div>
-    <div class="navbar-container2">
-        <p>CONTACT</p>
-        <a href="" class="btn-login">LOG IN</a>
-        <p>FAVORITE</p>
-    </div>        
-</div>
-<p class="myhome">My Home</p>
-<hr class="hr-accueil">
+    <p class="myhome">My Home</p>
+    <hr class="hr-accueil">
 
 <!--                                             ************** TITRE *************  -->
 <div class="menu-precedent">
@@ -41,7 +38,7 @@ function isPageActive2($currentPage, $targetPage) {
 
 <div class="titrepage">
     <div class="titre-gauche-buy">
-        PROPERTIES FOR SALE /
+        PROPERTIES FOR RENT /
     </div>
 </div>
 
@@ -124,10 +121,10 @@ function isPageActive2($currentPage, $targetPage) {
 
             <div class="filter-price">
                 <div class="title-price">
-                    <label>PRICE</label>
+                    <label>PRICE (per week)</label>
                 </div>   
                 <div class="filter-price">
-                    <input type="range" min="0" max="3000000" step="10000" id="propertyPrice"><br>
+                    <input type="range" min="0" max="50000" step="1000" id="propertyPrice"><br>
                     <div class="price-hrs">
                         <span class="price-hr"></span>
                         <span class="price-hr"></span>
@@ -176,7 +173,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA ALPHA<i class="fa-solid fa-arrow-right-long"></i></p>
-            <p>1,500,000€</p>
+            <p>15,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 5-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 5 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -194,7 +191,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA BETA<i class="fa-solid fa-arrow-right"></i></p>
-            <p>2,800,000€</p>
+            <p>28,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 6-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 6 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -212,7 +209,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA GAMMA<i class="fa-solid fa-arrow-right"></i></p>
-            <p>1,100,000€</p>
+            <p>10,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 3-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 3 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -230,7 +227,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA DELTA<i class="fa-solid fa-arrow-right"></i></p>
-            <p>2,500,000€</p>
+            <p>25,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 5-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 5 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -248,7 +245,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA OMEGA<i class="fa-solid fa-arrow-right"></i></p>
-            <p>1,000,000€</p>
+            <p>10,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 5-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 5 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -266,7 +263,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA BROOKLYN<i class="fa-solid fa-arrow-right"></i></p>
-            <p>1,200,000€</p>
+            <p>12,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 5-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 5 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -284,7 +281,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA NORWAY<i class="fa-solid fa-arrow-right"></i></p>
-            <p>1,500,000€</p>
+            <p>15,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 5-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 5 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -302,7 +299,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA SEASHORE<i class="fa-solid fa-arrow-right"></i></p>
-            <p>2,200,000€</p>
+            <p>22,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 5-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 5 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -320,7 +317,7 @@ function isPageActive2($currentPage, $targetPage) {
         </div>
         <div class="titre-villas-buy">
             <p>VILLA ALEXANDRIA<i class="fa-solid fa-arrow-right"></i></p>
-            <p>1,100,000€</p>
+            <p>11,000€</p>
         </div>
         <div class="description-villas">
             <p>The luxury 5-bedroom villa, is a 2-storey construction built on an ample plot, is composed of 5 separated bedrooms, impeccably designed with extensive open spaces, attention to details, doors crafted by local carpenters, terraces including roof-terrace with wooden pergolas, and a massive private triangle-shaped pool.</p>
@@ -371,11 +368,11 @@ function isPageActive2($currentPage, $targetPage) {
 <div class="footer">        
         <div class="navbar-container1">
             <div class="navbar">
-            <a href="index.php?page=1" class="lien1 <?php echo isPageActive($page, '1'); ?>">CENTURY 21.</a>
-            <a href="index.php?page=1" class="lien <?php echo isPageActive($page, '1'); ?> <?php echo isPageActive2($page, '1'); ?>">HOMEPAGE</a>
-            <a href="index.php?page=2" class="lien <?php echo isPageActive($page, '2'); ?> <?php echo isPageActive2($page, '2'); ?>">BUY</a>
-            <a href="index.php?page=3" class="lien <?php echo isPageActive($page, '3'); ?> <?php echo isPageActive2($page, '3'); ?>">RENT</a>
-            <a href="index.php?page=4" class="lien <?php echo isPageActive($page, '4'); ?> <?php echo isPageActive2($page, '4'); ?>">SELL</a>
+                <a href="index.php?page=1" class="lien1 <?php echo isPageActive($page, '1'); ?>">CENTURY 21.</a>
+                <a href="index.php?page=1" class="lien <?php echo isPageActive($page, '1'); ?>">HOMEPAGE</a>
+                <a href="index.php?page=2" class="lien <?php echo isPageActive($page, '2'); ?>">BUY</a>
+                <a href="index.php?page=3" class="lien <?php echo isPageActive($page, '3'); ?>">RENT</a>
+                <a href="index.php?page=4" class="lien <?php echo isPageActive($page, '4'); ?>">SELL</a>
             </div>
         </div>
         <div class="navbar-container2">
